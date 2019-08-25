@@ -62,7 +62,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\ZProjects\Scripts\Actor.cs" />
     <Compile Include="Assets\ZProjects\Scripts\App.cs" />
+    <Compile Include="Assets\ZProjects\Scripts\core\Enm.cs" />
+    <Compile Include="Assets\ZProjects\Scripts\data\GameData.cs" />
+    <Compile Include="Assets\ZProjects\Scripts\data\ItemData.cs" />
+    <Compile Include="Assets\ZProjects\Scripts\Move.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>D:/UnityGit/testFree2/testFree/gitTest/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
