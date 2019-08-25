@@ -1,0 +1,195 @@
+[1mdiff --git a/gitTest/Assembly-CSharp.csproj b/gitTest/Assembly-CSharp.csproj[m
+[1mindex a02c978..721439e 100644[m
+[1m--- a/gitTest/Assembly-CSharp.csproj[m
+[1m+++ b/gitTest/Assembly-CSharp.csproj[m
+[36m@@ -62,12 +62,7 @@[m
+     </Reference>[m
+   </ItemGroup>[m
+   <ItemGroup>[m
+[31m-    <Compile Include="Assets\ZProjects\Scripts\Actor.cs" />[m
+     <Compile Include="Assets\ZProjects\Scripts\App.cs" />[m
+[31m-    <Compile Include="Assets\ZProjects\Scripts\core\Enm.cs" />[m
+[31m-    <Compile Include="Assets\ZProjects\Scripts\data\GameData.cs" />[m
+[31m-    <Compile Include="Assets\ZProjects\Scripts\data\ItemData.cs" />[m
+[31m-    <Compile Include="Assets\ZProjects\Scripts\Move.cs" />[m
+     <Reference Include="Unity.Timeline.Editor">[m
+       <HintPath>D:/UnityGit/testFree2/testFree/gitTest/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>[m
+     </Reference>[m
+[1mdiff --git a/gitTest/Assets/Tree.prefab b/gitTest/Assets/Tree.prefab[m
+[1mdeleted file mode 100644[m
+[1mindex 3ee2e4c..0000000[m
+[1m--- a/gitTest/Assets/Tree.prefab[m
+[1m+++ /dev/null[m
+[36m@@ -1,872 +0,0 @@[m
+[31m-%YAML 1.1[m
+[31m-%TAG !u! tag:unity3d.com,2011:[m
+[31m---- !u!1 &4914662101871099446[m
+[31m-GameObject:[m
+[31m-  m_ObjectHideFlags: 0[m
+[31m-  m_CorrespondingSourceObject: {fileID: 0}[m
+[31m-  m_PrefabInstance: {fileID: 0}[m
+[31m-  m_PrefabAsset: {fileID: 0}[m
+[31m-  serializedVersion: 6[m
+[31m-  m_Component:[m
+[31m-  - component: {fileID: 2267055627336218}[m
+[31m-  - component: {fileID: 7102199524540722940}[m
+[31m-  - component: {fileID: 7536159451389754549}[m
+[31m-  - component: {fileID: 6673623396378831167}[m
+[31m-  m_Layer: 0[m
+[31m-  m_Name: Tree[m
+[31m-  m_TagString: Untagged[m
+[31m-  m_Icon: {fileID: 0}[m
+[31m-  m_NavMeshLayer: 0[m
+[31m-  m_StaticEditorFlags: 0[m
+[31m-  m_IsActive: 1[m
+[31m---- !u!4 &2267055627336218[m
+[31m-Transform:[m
+[31m-  m_ObjectHideFlags: 0[m
+[31m-  m_CorrespondingSourceObject: {fileID: 0}[m
+[31m-  m_PrefabInstance: {fileID: 0}[m
+[31m-  m_PrefabAsset: {fileID: 0}[m
+[31m-  m_GameObject: {fileID: 4914662101871099446}[m
+[31m-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}[m
+[31m-  m_LocalPosition: {x: 0, y: 0, z: 0}[m
+[31m-  m_LocalScale: {x: 1, y: 1, z: 1}[m
+[31m-  m_Children: [][m
+[31m-  m_Father: {fileID: 0}[m
+[31m-  m_RootOrder: 0[m
+[31m-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}[m
+[31m---- !u!193 &7102199524540722940[m
+[31m-Tree:[m
+[31m-  m_ObjectHideFlags: 0[m
+[31m-  m_CorrespondingSourceObject: {fileID: 0}[m
+[31m-  m_PrefabInstance: {fileID: 0}[m
+[31m-  m_PrefabAsset: {fileID: 0}[m
+[31m-  m_GameObject: {fileID: 4914662101871099446}[m
+[31m-  m_SpeedTreeWindAsset: {fileID: 0}[m
+[31m-  m_TreeData: {fileID: -1480448031864613154}[m
+[31m---- !u!33 &7536159451389754549[m
+[31m-MeshFilter:[m
+[31m-  m_ObjectHideFlags: 0[m
+[31m-  m_CorrespondingSourceObject: {fileID: 0}[m
+[31m-  m_PrefabInstance: {fileID: 0}[m
+[31m-  m_PrefabAsset: {fileID: 0}[m
+[31m-  m_GameObject: {fileID: 4914662101871099446}[m
+[31m-  m_Mesh: {fileID: -4787660261629884057}[m
+[31m---- !u!23 &6673623396378831167[m
+[31m-MeshRenderer:[m
+[31m-  m_ObjectHideFlags: 0[m
+[31m-  m_CorrespondingSourceObject: {fileID: 0}[m
+[31m-  m_PrefabInstance: {fileID: 0}[m
+[31m-  m_PrefabAsset: {fileID: 0}[m
+[31m-  m_GameObject: {fileID: 4914662101871099446}[m
+[31m-  m_Enabled: 1[m
+[31m-  m_CastShadows: 1[m
+[31m-  m_ReceiveShadows: 1[m
+[31m-  m_DynamicOccludee: 1[m
+[31m-  m_MotionVectors: 1[m
+[31m-  m_LightProbeUsage: 1[m
+[31m-  m_ReflectionProbeUsage: 1[m
+[31m-  m_RenderingLayerMask: 1[m
+[31m-  m_RendererPriority: 0[m
+[31m-  m_Materials:[m
+[31m-  - {fileID: 600441652776637514}[m
+[31m-  m_StaticBatchInfo:[m
+[31m-    firstSubMesh: 0[m
+[31m-    subMeshCount: 0[m
+[31m-  m_StaticBatchRoot: {fileID: 0}[m
+[31m-  m_ProbeAnchor: {fileID: 0}[m
+[31m-  m_LightProbeVolumeOverride: {fileID: 0}[m
+[31m-  m_ScaleInLightmap: 1[m
+[31m-  m_ReceiveGI: 1[m
+[31m-  m_PreserveUVs: 0[m
+[31m-  m_IgnoreNormalsForChartDetection: 0[m
+[31m-  m_ImportantGI: 0[m
+[31m-  m_StitchLightmapSeams: 1[m
+[31m-  m_SelectedEditorRenderState: 3[m
+[31m-  m_MinimumChartSize: 4[m
+[31m-  m_AutoUVMaxDistance: 0.5[m
+[31m-  m_AutoUVMaxAngle: 89[m
+[31m-  m_LightmapParameters: {fileID: 0}[m
+[31m-  m_SortingLayerID: 0[m
+[31m-  m_SortingLayer: 0[m
+[31m-  m_SortingOrder: 0[m
+[31m---- !u!21 &-4847307263336235031[m
+[31m-Material:[m
+[31m-  serializedVersion: 6[m
+[31m-  m_ObjectHideFlags: 0[m
+[31m-  m_CorrespondingSourceObject: {fileID: 0}[m
+[31m-  m_PrefabInstance: {fileID: 0}[m
+[31m-  m_PrefabAsset: {fileID: 0}[m
+[31m-  m_Name: Optimized Leaf Material[m
+[31m-  m_Shader: {fileID: 10605, guid: 0000000000000000f000000000000000, type: 0}[m
+[31m-  m_ShaderKeywords: [m
+[31m-  m_LightmapFlags: 4[m
+[31m-  m_EnableInstancingVariants: 0[m
+[31m-  m_DoubleSidedGI: 0[m
+[31m-  m_CustomRenderQueue: -1[m
+[31m-  stringTagMap: {}[m
+[31m-  disabledShaderPasses: [][m
+[31m-  m_SavedProperties:[m
+[31m-    serializedVersion: 3[m
+[31m-    m_TexEnvs:[m
+[31m-    - _BumpSpecMap:[m
+[31m-        m_Texture: {fileID: 2800000, guid: 77d22d5c5f7638449be76ddc3ff6cc4d, type: 3}[m
+[31m-        m_Scale: {x: 1, y: 1}[m
+[31m-        m_Offset: {x: 0, y: 0}[m
+[31m-    - _MainTex:[m
+[31m-        m_Texture: {fileID: 2800000, guid: 3d6bbc0744eb7544b8cf6fa495ee1ad9, type: 3}[m
+[31m-        m_Scale: {x: 1, y: 1}[m
+[31m-        m_Offset: {x: 0, y: 0}[m
+[31m-    - _ShadowTex:[m
+[31m-        m_Texture: {fileID: 2800000, guid: 68288079e0b155c4781b88e2e4e94b59, type: 3}[m
+[31m-        m_Scale: {x: 1, y: 1}[m
+[31m-        m_Offset: {x: 0, y: 0}[m
+[31m-    - _TranslucencyMap:[m
+[31m-        m_Texture: {fileID: 2800000, guid: ee5561c7821111145bcad8c2f990e1c2, type: 3}[m
+[31m-        m_Scale: {x: 1, y: 1}[m
+[31m-        m_Offset: {x: 0, y: 0}[m
+[31m-    m_Floats:[m
+[31m-    - _Cutoff: 0.3[m
+[31m-    - _ShadowOffsetScale: 1[m
+[31m-    - _ShadowStrength: 0.8[m
+[31m-    - _SquashAmount: 1[m
+[31m-    - _TranslucencyViewDependency: 0.7[m
+[31m-    m_Colors:[m
+[31m-    - _Color: {r: 1, g: 1, b: 1, a: 1}[m
+[31m-    - _TranslucencyColor: {r: 0.73, g: 0.85, b: 0.41, a: 1}[m
+[31m-    - _TreeInstanceColor: {r: 1, g: 1, b: 1, a: 1}[m
+[31m-    - _TreeInstanceScale: {r: 1, g: 1, b: 1, a: 1}[m
+[31m---- !u!43 &-4787660261629884057[m
+[31m-Mesh:[m
+[31m-  m_ObjectHideFlags: 0[m
+[31m-  m_CorrespondingSourceObject: {fileID: 0}[m
+[31m-  m_PrefabInstance: {fileID: 0}[m
+[31m-  m_PrefabAsset: {fileID: 0}[m
+[31m-  m_Name: Mesh[m
+[31m-  serializedVersion: 10[m
+[31m-  m_SubMeshes:[m
+[31m-  - serializedVersion: 2[m
+[31m-    firstByte: 0[m
+[31m-    indexCount: 420[m
+[31m-    topology: 0[m
+[31m-    baseVertex: 0[m
+[31m-    firstVertex: 0[m
+[31m-    vertexCount: 88[m
+[31m-    localAABB:[m
+[31m-      m_Center: {x: -0.077427864, y: 7.371292, z: -0.30755773}[m
+[31m-      m_Extent: {x: 0.5748199, y: 7.371292, z: 0.99303865}[m
+[31m-  m_Shapes:[m
+[31m-    vertices: [][m
+[31m-    shapes: [][m
+[31m-    channels: [][m
+[31m-    fullWeights: [][m
+[31m-  m_BindPose: [][m
+[31m-  m_BoneNameHashes: [m
+[31m-  m_RootBoneNameHash: 0[m
+[31m-  m_BonesAABB: [][m
+[31m-  m_VariableBoneCountWeights:[m
+[31m-    m_Data: [m
+[31m-  m_MeshCompression: 0[m
+[31m-  m_IsReadable: 1[m
+[31m-  m_KeepVertices: 1[m
+[31m-  m_KeepIndices: 1[m
+[31m-  m_IndexFormat: 0[m
+[31m-  m_IndexBuffer: 090000000a00000001000a000a0001000b00010002000b000b0002000c00020003000c000c0003000d00030004000d000d0004000e00040005000e000e0005000f00050006000f000f000600100006000700100010000700110007000800110012000900130009000a00130013000a0014000a000b00140014000b0015000b000c00150015000c0016000c000d00160016000d0017000d000e00170017000e0018000e000f00180018000f0019000f0010001900190010001a00100011001a001b0012001c00120013001c001c0013001d00130014001d001d0014001d00140015001d001d0015001e00150016001e001e0016001f00160017001f001f0017001f00170018001f001f001800200018001900200020001900210019001a00210022001b0023001b001c00230023001c0024001c00
